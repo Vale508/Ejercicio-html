@@ -6,6 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="./stylo.css">
     <script src="Js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#mas').click(function() {
+                $('.cuadro-login').toggle();
+                if ($('.cuadro-login').is(':visible')) {
+                    $('#mas').text('-');
+                } else {
+                    $('#mas').text('+');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <img src="./Imag/Log.png" alt="Imagen en esquina" class="esquina-imagen">
@@ -13,9 +25,8 @@
         <h2 style="text-align: center;">Iniciar sesión</h2>
         <input type="text" class="campo" placeholder="Usuario">
         <input type="password" class="campo" placeholder="Contraseña">
-        <div class="cuadro-simbolos">
-            <div class="simbolo">+</div>
-            <div class="simbolo">-</div>
-          </div>
+    </div>
+    <div class="cuadro-simbolos">
+        <div class="simbolo" id="mas">+</div>
 </body>
 </html>
