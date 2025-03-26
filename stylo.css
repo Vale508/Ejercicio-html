@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #003049;
+  }
+
+  .esquina-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+  }
+  .cuadro-simbolos {
+    position: absolute;
+    top: 20px;  
+    right: 20px; 
+    width: 100px;
+    height: 50px;
+    background-color: #FDF0D5;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  .simbolo {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #003049;
+  }
+
+  .simbolo:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  .cuadro-login {
+    width: 50%; 
+    padding: 20px;
+    background-color: #FDF0D5; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .campo {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .campo:focus {
+    border-color: #4A90E2;
+    outline: none;
+  }
